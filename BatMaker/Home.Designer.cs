@@ -1,7 +1,7 @@
 ﻿
 namespace BatMaker
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
