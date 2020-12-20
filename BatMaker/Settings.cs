@@ -39,7 +39,14 @@ namespace BatMaker
             {
                 Home.nameFile = textBox1.Text;
                 Home.filePath = textBox2.Text;
+                this.Close();
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //TODO add a check if any changes has been done
+            this.Close();
         }
     }
 }
