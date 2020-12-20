@@ -36,14 +36,15 @@ namespace BatMaker
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -70,8 +71,8 @@ namespace BatMaker
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(728, 60);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Settings";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "  Settings";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel2
             // 
@@ -82,7 +83,8 @@ namespace BatMaker
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.button1, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel2, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.button3, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 63);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -109,6 +111,7 @@ namespace BatMaker
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3.Location = new System.Drawing.Point(3, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(358, 40);
@@ -138,16 +141,6 @@ namespace BatMaker
             this.panel1.Size = new System.Drawing.Size(358, 34);
             this.panel1.TabIndex = 3;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(367, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(358, 34);
-            this.panel2.TabIndex = 4;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(3, 8);
@@ -157,7 +150,7 @@ namespace BatMaker
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(3, 8);
+            this.textBox2.Location = new System.Drawing.Point(3, 7);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 0;
@@ -165,7 +158,7 @@ namespace BatMaker
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(109, 6);
+            this.button2.Location = new System.Drawing.Point(106, 7);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(26, 23);
@@ -174,6 +167,29 @@ namespace BatMaker
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(0, 299);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(364, 40);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Cancel";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.textBox2);
+            this.flowLayoutPanel1.Controls.Add(this.button2);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(367, 43);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(358, 30);
+            this.flowLayoutPanel1.TabIndex = 6;
             // 
             // Settings
             // 
@@ -192,8 +208,8 @@ namespace BatMaker
             this.tableLayoutPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -208,8 +224,9 @@ namespace BatMaker
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

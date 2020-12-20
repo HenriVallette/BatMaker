@@ -13,14 +13,11 @@ namespace BatMaker
     public partial class Settings : Form
     {
 
-        public string pathToSave = Application.StartupPath;
-        public string fileName;
-
         public Settings()
         {
             InitializeComponent();
-            textBox2.Text = pathToSave;
-            textBox1.Text = fileName;
+            textBox2.Text = Home.filePath;
+            textBox1.Text = Home.nameFile;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,8 +25,8 @@ namespace BatMaker
             FolderBrowserDialog folder = new FolderBrowserDialog();
             if(folder.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                pathToSave = folder.SelectedPath;
-                textBox2.Text = pathToSave;
+                Home.filePath = folder.SelectedPath;
+                textBox2.Text = Home.filePath;
             }
         }
 
@@ -40,8 +37,8 @@ namespace BatMaker
                 MessageBox.Show("You didn't enter a name for your file.", "Error");
             } else
             {
-                fileName = textBox1.Text;
-                pathToSave = textBox2.Text;
+                Home.nameFile = textBox1.Text;
+                Home.filePath = textBox2.Text;
             }
         }
     }

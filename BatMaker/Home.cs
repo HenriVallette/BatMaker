@@ -12,18 +12,24 @@ namespace BatMaker
 {
     public partial class Home : Form
     {
+
+        public static string nameFile;
+        public static string filePath = Application.StartupPath;
+
         public Home()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
-            flowLayoutPanel1.Controls.Add(new Task());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Settings settings = new Settings();
+            settings.Show();
         }
     }
 }
