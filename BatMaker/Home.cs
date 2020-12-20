@@ -15,6 +15,15 @@ namespace BatMaker
         public Home()
         {
             InitializeComponent();
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
+            flowLayoutPanel1.Controls.Add(new Task());
         }
     }
 }
