@@ -46,7 +46,16 @@ namespace BatMaker
         private void button3_Click(object sender, EventArgs e)
         {
             //TODO add a check if any changes has been done
-            this.Close();
+            if(Home.filePath == textBox2.Text && Home.nameFile == textBox1.Text)
+            {
+                this.Close();
+            } else
+            {
+                if(MessageBox.Show("Some changes have occured are you sure you want to quit ?", "Unsaved changes", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                {
+                    this.Close();
+                }
+            }     
         }
     }
 }

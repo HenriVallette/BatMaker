@@ -15,6 +15,15 @@ namespace BatMaker
 
         public static string nameFile;
         public static string filePath = Application.StartupPath;
+        public static int nbTasks = 0;
+        public static List<Task> tasks = new List<Task>();
+        private FlowLayoutPanel _flowLayoutPanel = new FlowLayoutPanel();
+
+        public FlowLayoutPanel FlowLayoutPanel
+        {
+            get { return this._flowLayoutPanel; }
+            set { this._flowLayoutPanel = flowLayoutPanel1; }
+        }
 
         public Home()
         {
@@ -23,7 +32,9 @@ namespace BatMaker
 
         private void button1_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.Controls.Add(new Task());
+            Task task = new Task(nbTasks++);
+            flowLayoutPanel1.Controls.Add(task);
+            tasks.Add(task);
         }
 
         private void button2_Click(object sender, EventArgs e)

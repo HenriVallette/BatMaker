@@ -66,6 +66,12 @@
     <Compile Include="Task.Designer.cs">
       <DependentUpon>Task.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskEditor.Designer.cs">
+      <DependentUpon>TaskEditor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Task.resx">
       <DependentUpon>Task.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskEditor.resx">
+      <DependentUpon>TaskEditor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
