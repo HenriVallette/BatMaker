@@ -45,9 +45,6 @@ namespace BatMaker
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //TODO add a check if any changes has been done
-            Console.WriteLine(String.Equals(Home.filePath, textBox2.Text));
-            Console.WriteLine(String.Equals(Home.nameFile, textBox1.Text));
             if (String.Equals(Home.filePath, textBox2.Text) && String.Equals(Home.nameFile, textBox1.Text))
             {
                 this.Close();
