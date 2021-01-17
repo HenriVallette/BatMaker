@@ -98,7 +98,6 @@ namespace BatMaker
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(280, 27);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Choose a file or website to open";
-            this.toolTip1.SetToolTip(this.guna2HtmlLabel2, "Add the URL of the website or click on the button to browse for a file to open");
             // 
             // guna2HtmlLabel1
             // 
@@ -191,6 +190,8 @@ namespace BatMaker
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
             this.guna2TextBox1.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.guna2TextBox1, "Add the URL of the website or click on the button to browse for a file to open\r\ne" +
+        "x : \"Google.com\"\r\n       \"C:\\Users\\username\\Desktop\\file\"");
             this.guna2TextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyDown);
             // 
             // flowLayoutPanel1
@@ -208,10 +209,10 @@ namespace BatMaker
             this.guna2Button1.CheckedState.Parent = this.guna2Button1;
             this.guna2Button1.CustomImages.Parent = this.guna2Button1;
             this.guna2Button1.FillColor = System.Drawing.Color.Firebrick;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(9, 306);
+            this.guna2Button1.Location = new System.Drawing.Point(22, 306);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(110, 45);
@@ -224,10 +225,10 @@ namespace BatMaker
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
             this.guna2Button2.CustomImages.Parent = this.guna2Button2;
             this.guna2Button2.FillColor = System.Drawing.Color.Green;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(159, 306);
+            this.guna2Button2.Location = new System.Drawing.Point(151, 306);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(110, 45);

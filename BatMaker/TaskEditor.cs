@@ -47,6 +47,8 @@ namespace BatMaker
                 instruction.Text = guna2ComboBox1.Text.ToUpper() + " / " + guna2TextBox1.Text;
                 instruction.Width = 275;
                 instruction.Height = 35;
+                instruction.FillColor = Color.CornflowerBlue;
+                instruction.BorderColor = Color.SteelBlue;
                 flowLayoutPanel1.Controls.Add(instruction);
             }
         }
