@@ -18,7 +18,37 @@ namespace BatMaker
         {
             InitializeComponent();
             ID = id;
-            label1.Text = ID.ToString();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+            addInstruction();
+        }
+
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                addInstruction();
+            }
+        }
+
+        private void addInstruction()
+        {
+            if (String.IsNullOrEmpty(guna2ComboBox1.Text))
+            {
+                MessageBox.Show("You didn't enter a software to launch", "Error");
+            } else if(String.IsNullOrEmpty(guna2TextBox1.Text))
+            {
+                MessageBox.Show("You didn't enter a file or website to launch", "Error");
+            } else
+            {
+                Guna.UI2.WinForms.Guna2Chip instruction = new Guna.UI2.WinForms.Guna2Chip();
+                instruction.Text = guna2ComboBox1.Text.ToUpper() + " / " + guna2TextBox1.Text;
+                instruction.Width = 275;
+                instruction.Height = 35;
+                flowLayoutPanel1.Controls.Add(instruction);
+            }
         }
     }
 }
