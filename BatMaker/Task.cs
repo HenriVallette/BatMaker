@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,12 @@ namespace BatMaker
     public partial class Task : UserControl
     {
 
-        private int ID;
+        private int _id;
+
+        public int ID {
+            get { return this._id; }
+            set { this._id = value; }
+        }
 
         public Task(int id)
         {

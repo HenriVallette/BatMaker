@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,7 @@ namespace BatMaker
         public static int nbTasks = 0;
         public static List<Task> tasks = new List<Task>();
         private FlowLayoutPanel _flowLayoutPanel = new FlowLayoutPanel();
+        private List<TaskData> _tasksData;
 
         public FlowLayoutPanel FlowLayoutPanel
         {
@@ -25,9 +27,15 @@ namespace BatMaker
             set { this._flowLayoutPanel = flowLayoutPanel1; }
         }
 
+        public List<TaskData> TaskData {
+            get { return this._tasksData; }
+            set { this._tasksData = value;  }
+        }
+
         public Home()
         {
             InitializeComponent();
+            TaskData = new List<TaskData>();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,6 +43,8 @@ namespace BatMaker
             Task task = new Task(nbTasks++);
             flowLayoutPanel1.Controls.Add(task);
             tasks.Add(task);
+            TaskData taskData = new TaskData(task.ID);
+            TaskData.Add(taskData);
         }
 
         private void button2_Click(object sender, EventArgs e)

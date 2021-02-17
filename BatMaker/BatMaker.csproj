@@ -69,6 +69,7 @@
     <Compile Include="Task.Designer.cs">
       <DependentUpon>Task.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaskData.cs" />
     <Compile Include="TaskEditor.cs">
       <SubType>Form</SubType>
     </Compile>

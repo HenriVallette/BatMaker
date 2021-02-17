@@ -33,14 +33,14 @@ namespace BatMaker
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Save = new Guna.UI2.WinForms.Guna2Button();
+            this.Cancel = new Guna.UI2.WinForms.Guna2Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -75,8 +75,8 @@ namespace BatMaker
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.Save);
+            this.panel1.Controls.Add(this.Cancel);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.guna2TextBox1);
             this.panel1.Controls.Add(this.guna2ImageButton1);
@@ -88,6 +88,92 @@ namespace BatMaker
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(794, 384);
             this.panel1.TabIndex = 1;
+            // 
+            // Save
+            // 
+            this.Save.BorderRadius = 20;
+            this.Save.CheckedState.Parent = this.Save;
+            this.Save.CustomImages.Parent = this.Save;
+            this.Save.FillColor = System.Drawing.Color.Green;
+            this.Save.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.Save.ForeColor = System.Drawing.Color.White;
+            this.Save.HoverState.Parent = this.Save;
+            this.Save.Location = new System.Drawing.Point(151, 306);
+            this.Save.Name = "Save";
+            this.Save.ShadowDecoration.Parent = this.Save;
+            this.Save.Size = new System.Drawing.Size(110, 45);
+            this.Save.TabIndex = 7;
+            this.Save.Text = "Save";
+            this.Save.Click += new System.EventHandler(this.Save_Click);
+            // 
+            // Cancel
+            // 
+            this.Cancel.BorderRadius = 20;
+            this.Cancel.CheckedState.Parent = this.Cancel;
+            this.Cancel.CustomImages.Parent = this.Cancel;
+            this.Cancel.FillColor = System.Drawing.Color.Firebrick;
+            this.Cancel.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.Cancel.ForeColor = System.Drawing.Color.White;
+            this.Cancel.HoverState.Parent = this.Cancel;
+            this.Cancel.Location = new System.Drawing.Point(22, 306);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.ShadowDecoration.Parent = this.Cancel;
+            this.Cancel.Size = new System.Drawing.Size(110, 45);
+            this.Cancel.TabIndex = 6;
+            this.Cancel.Text = "Cancel";
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(468, 62);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(308, 304);
+            this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(9, 208);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
+            this.guna2TextBox1.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.guna2TextBox1, "Add the URL of the website or click on the button to browse for a file to open\r\ne" +
+        "x : \"Google.com\"\r\n       \"C:\\Users\\username\\Desktop\\file\"");
+            this.guna2TextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyDown);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(36, 36);
+            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Image = global::BatMaker.Properties.Resources.Plus;
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(36, 36);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(225, 208);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
+            this.guna2ImageButton1.Size = new System.Drawing.Size(36, 36);
+            this.guna2ImageButton1.TabIndex = 3;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // guna2HtmlLabel2
             // 
@@ -150,90 +236,7 @@ namespace BatMaker
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
             this.guna2ComboBox1.TabIndex = 0;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(36, 36);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = global::BatMaker.Properties.Resources.Plus;
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(36, 36);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(225, 208);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(36, 36);
-            this.guna2ImageButton1.TabIndex = 3;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(9, 208);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 36);
-            this.guna2TextBox1.TabIndex = 4;
-            this.toolTip1.SetToolTip(this.guna2TextBox1, "Add the URL of the website or click on the button to browse for a file to open\r\ne" +
-        "x : \"Google.com\"\r\n       \"C:\\Users\\username\\Desktop\\file\"");
-            this.guna2TextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyDown);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(468, 62);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(308, 304);
-            this.flowLayoutPanel1.TabIndex = 5;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Firebrick;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(22, 306);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(110, 45);
-            this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Cancel";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Green;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(151, 306);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(110, 45);
-            this.guna2Button2.TabIndex = 7;
-            this.guna2Button2.Text = "Save";
+            this.guna2ComboBox1.SelectedValueChanged += new System.EventHandler(this.guna2ComboBox1_SelectedValueChanged);
             // 
             // TaskEditor
             // 
@@ -266,8 +269,8 @@ namespace BatMaker
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button Save;
+        private Guna.UI2.WinForms.Guna2Button Cancel;
         private System.Windows.Forms.ToolTip toolTip1;
     }
 }
